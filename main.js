@@ -3,7 +3,7 @@
 imports.gi.versions.Gtk = '3.0';
 
 const ByteArray = imports.byteArray;
-const {GLib, Gio, GObject, Gtk} = imports.gi;
+const {Gio, GObject, Gtk} = imports.gi;
 const System = imports.system;
 
 let app = new Gtk.Application({
@@ -31,9 +31,6 @@ app.connect('activate', app => {
             provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         win.show_all();
-
-        let home = GLib.get_home_dir();
-        GLib.unlink(`${home}/precious-file.txt`)
     }
 
     win.present();

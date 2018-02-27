@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Hello Jogja
+Icon=org.gnome.Jogja
+Exec=/app/bin/org.gnome.Jogja
+Categories=Development;Viewer;

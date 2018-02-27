@@ -1,0 +1,29 @@
+{
+  "app-id": "org.gnome.Jogja",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.26",
+  "sdk": "org.gnome.Sdk",
+  "command": "org.gnome.Jogja",
+  "finish-args": [
+     "--socket=x11"
+  ],
+  "modules": [
+    {
+      "name": "jogja-application",
+      "buildsystem": "simple",
+      "build-commands": [
+          "install -D main.js /app/share/org.gnome.Jogja/main.js",
+          "install -D style.css /app/share/org.gnome.Jogja/style.css",
+          "install -D jogja.ui /app/share/org.gnome.Jogja/jogja.ui",
+          "install -D -m 0755 org.gnome.Jogja /app/bin/org.gnome.Jogja"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "path": ".",
+          "branch": "master"
+        }
+      ]
+    }
+  ]
+}

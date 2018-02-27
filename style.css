@@ -1,0 +1,11 @@
+button {
+    font-size: 48px;
+    color: #ec008c;
+}
+
+popover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 56px;
+    padding: 12px;
+}
